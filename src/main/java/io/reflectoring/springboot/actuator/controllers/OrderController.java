@@ -25,7 +25,7 @@ public class OrderController {
 
   @GetMapping("/{customerId}/orders")
   public List<Order> getOrders(@PathVariable(value = "customerId") String customerId) {
-    System.out.println("Get orders requested for customer SGO2 : " + customerId);
+    System.out.println("Get orders requested for customer SGO : " + customerId);
 
     // Dummy order history for example purpose
     OrderLineItem orderLineItem1 = new OrderLineItem();
