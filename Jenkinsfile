@@ -18,7 +18,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh 'java -jar /var/lib/jenkins/.m2/repository/io/reflectoring/springboot/actuator/actuator-examples/0.0.1-SNAPSHOT/actuator-examples-0.0.1-SNAPSHOT.jar'
+                sh 'sudo systemctl restart nginx'
             }
         }
     }
