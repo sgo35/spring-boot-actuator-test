@@ -1,0 +1,8 @@
+#management.endpoint.metrics.enabled=false
+server:
+  port : 8081
+management:
+  endpoints.web.exposure.include: mappings,beans,startup,env,scheduledtasks,caches,metrics,health
+
+
+
